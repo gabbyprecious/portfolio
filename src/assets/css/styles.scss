@@ -1,0 +1,121 @@
+@import 'theme-colors';
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+
+.app-background {
+  background-color: var(--app-background-color);
+}
+
+.container {
+  max-width: 970px;
+}
+
+#top-header {
+  background-color: var(--dynamic-header-color);
+  padding-top: 1.5em;
+  padding-bottom: 0.5em;
+  .headshot {
+    height: 75px;
+    width: 75px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: block;
+  }
+  .nav{
+    float: right;
+  }
+  #list-div {
+    padding-top: 1.5em;
+    padding-left: 0;
+    position: relative;
+    float: right;
+    margin-top: 0;
+    margin-bottom: 10px;
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    text-align: -webkit-match-parent;
+    a {
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    a.active {
+      color: #42b983;
+    }
+    /*
+* === THEME SWITCH ===
+*/
+    input.theme-switch {
+      // opacity: 0;
+      display: none;
+    }
+
+    input.theme-switch + label {
+      cursor: pointer;
+      float: right;
+      margin-left: 12px;
+    }
+
+    input.theme-switch:not(:checked) + label:hover {
+      cursor: pointer;
+    }
+
+    input.theme-switch + label:active,
+    input.theme-switch:checked + label {
+      cursor: pointer;
+    }
+  }
+  
+}
+
+
+.headshot2 {
+  height: 150px;
+  width: 150px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+#name-container{
+  background-color: grey;
+  height: 500px;
+}
+
+article{
+  margin: 0 auto;
+  max-width: 460px;
+}
+
+
+footer {
+  background: #c5ded7;
+  padding: 3em 0;
+  .footer-list {
+    display: flex;
+    justify-content: center;
+    li {
+      list-style-type: none;
+      margin: 0 30px;
+    } 
+  }
+}
+
+
+// .sr-only {
+// 	border: 0 !important;
+// 	clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+// 	-webkit-clip-path: inset(50%) !important;
+// 		clip-path: inset(50%) !important;  /* 2 */
+// 	height: 1px !important;
+// 	margin: -1px !important;
+// 	overflow: hidden !important;
+// 	padding: 0 !important;
+// 	position: absolute !important;
+// 	width: 1px !important;
+// 	white-space: nowrap !important;            /* 3 */
+// }
