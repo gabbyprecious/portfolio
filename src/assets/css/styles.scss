@@ -41,10 +41,10 @@
     text-align: -webkit-match-parent;
     a {
       font-weight: bold;
-      color: #2c3e50;
+      color: #42b983;
     }
     a.active {
-      color: #42b983;
+      color: #2c3e50;
     }
     /*
 * === THEME SWITCH ===
@@ -84,6 +84,14 @@
 #name-container{
   background-color: grey;
   height: 500px;
+  margin: 0 0 84px;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 article{
@@ -91,6 +99,11 @@ article{
   max-width: 460px;
 }
 
+.short-intro {
+  p{
+    font-size: 1.2em;
+  }
+}
 
 footer {
   background: #c5ded7;

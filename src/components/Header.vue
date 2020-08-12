@@ -8,9 +8,9 @@
           </b-col>
           <b-col col="7" id="list-div">
             <b-nav>
-              <b-nav-item to="/" exact exact-active-class="active">Home</b-nav-item>
-              <b-nav-item to="/about" exact exact-active-class="active">About</b-nav-item>
-              <b-nav-item to="/about" exact exact-active-class="active">Notes</b-nav-item>
+              <b-nav-item to="/" exact exact-active-class="active">About</b-nav-item>
+              <b-nav-item to="/works" exact exact-active-class="active">Works</b-nav-item>
+              <b-nav-item to="/notes" exact exact-active-class="active">Notes</b-nav-item>
               <div class="">
                 <input type="checkbox" id='theme-switch' class='theme-switch sr-only' v-model="darkMode"/>
                 <label for='theme-switch'>

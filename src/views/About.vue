@@ -1,15 +1,18 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <Name />
+    <Skills />
   </div>
 </template>
 
 <script>
-
+import Name from '@/components/Name.vue'
+import Skills from '@/components/Skills.vue'
 export default {
   name: 'About',
   components: {
-    
+    Name,
+    Skills
   }
 }
 </script>
