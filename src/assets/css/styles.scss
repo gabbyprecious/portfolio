@@ -1,6 +1,6 @@
-@import 'theme-colors';
-@import 'node_modules/bootstrap/scss/bootstrap';
-@import 'node_modules/bootstrap-vue/src/index.scss';
+@import "theme-colors";
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap-vue/src/index.scss";
 
 .app-background {
   background-color: var(--app-background-color);
@@ -21,7 +21,7 @@
     border-radius: 50%;
     display: block;
   }
-  .nav{
+  .nav {
     float: right;
   }
   #list-div {
@@ -32,7 +32,7 @@
     margin-top: 0;
     margin-bottom: 10px;
     display: block;
-    list-style-type: disc;
+    list-style-type: none;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -69,10 +69,25 @@
       cursor: pointer;
     }
   }
-  
 }
 
-
+@media screen and (max-width: 500px) {
+  #top-header {
+    .headshot {
+      height: 65px;
+      width: 65px;
+    }
+    .nav {
+      flex-wrap: initial;
+      .nav-item{
+        font-size: 0.8rem;
+      }
+      .nav-link {
+        padding: 0.5rem;
+      }
+    }
+  }
+}
 .headshot2 {
   height: 150px;
   width: 150px;
@@ -81,7 +96,7 @@
   display: inline-block;
 }
 
-#name-container{
+#name-container {
   background-color: grey;
   height: 500px;
   margin: 0 0 84px;
@@ -94,13 +109,13 @@
   padding-right: 15px;
 }
 
-article{
+article {
   margin: 0 auto;
   max-width: 460px;
 }
 
 .short-intro {
-  p{
+  p {
     font-size: 1.2em;
   }
 }
@@ -114,10 +129,19 @@ footer {
     li {
       list-style-type: none;
       margin: 0 30px;
-    } 
+    }
   }
 }
 
+@media screen and (max-width: 500px){
+  footer {
+    .footer-list{
+      li{
+        margin: 0 10px;
+      }
+    }
+  }
+}
 
 // .sr-only {
 // 	border: 0 !important;
