@@ -1,18 +1,11 @@
 <template>
-  <div>
-    <b-jumbotron id="name-container">
-      <template v-slot:header>I'm Ugonna T.</template>
-
-      <template v-slot:lead>
-        Software Developer
-      </template>
-
-      <p>
-       Software Developer
-      </p>
-    </b-jumbotron>
-  </div>
-  
+  <section class="details">
+    <div class="name-text">
+      <h1>I'm Ugonna T.</h1>
+      <p>Software Developer</p>
+    </div>
+    <img alt="land" src="@/assets/images/landimage.svg">
+  </section>
 </template>
 
 <script>

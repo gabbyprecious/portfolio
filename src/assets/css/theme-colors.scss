@@ -1,11 +1,15 @@
 :root {
-    --app-background-color: #FFFFFF;
-    --dynamic-header-color: rgb(224, 235, 232);
-    --dynamic-subtitle-color: #4a4a4a;
+    --app-background-color: white;
+    --app-background-text-color: black;
+    --dynamic-header-color: black;
+    --dynamic-header-text-color: white;
+    --dynamic-subtitle-color: #caadad;
 }
 
 [theme="dark"] {
-    --app-background-color: #091A28;
-    --dynamic-header-color: red;
+    --app-background-color: black;
+    --app-background-text-color: white;
+    --dynamic-header-color: white;
+    --dynamic-header-text-color: black;
     --dynamic-subtitle-color: cyan;
 }

@@ -1,15 +1,13 @@
 <template>
-  <div class="work">
-    <h1>This is an about page</h1>
-  </div>
+    <Work />
 </template>
 
 <script>
-
+import Work from '@/components/Work.vue'
 export default {
   name: 'Works',
   components: {
-    
+   Work 
   }
 }
 </script>

@@ -1,42 +1,30 @@
 <template>
-  <header id="top-header">
-    <Container>
-      <b-container>
-        <b-row align-v="center">
-          <b-col col="4">
-            <span class="headshot"></span>
-          </b-col>
-          <b-col col="7" id="list-div">
-            <b-nav>
-              <b-nav-item to="/" exact exact-active-class="active">About</b-nav-item>
-              <b-nav-item to="/works" exact exact-active-class="active">Works</b-nav-item>
-              <b-nav-item to="/notes" exact exact-active-class="active">Notes</b-nav-item>
-              <div class="">
-                <input type="checkbox" id='theme-switch' class='theme-switch sr-only' v-model="darkMode"/>
-                <label for='theme-switch'>
-                  <span v-if="darkMode === true">
-                    <img alt="logo" src="@/assets/images/light.png" width="20">
-                  </span>
-                  <span v-else>
-                    <img alt="logo" src="@/assets/images/dark.png" width="20">
-                  </span>
-                </label>
-              </div>
-            </b-nav>
-          </b-col>
-        </b-row>
-      </b-container>
-    </Container>
+  <header>
+    <span class="headshot"></span>
+    <b-nav class="navbar">
+      <b-nav-item to="/" exact exact-active-class="active">About</b-nav-item>
+      <b-nav-item to="/works" exact exact-active-class="active">Works</b-nav-item>
+      <b-nav-item to="/notes" exact exact-active-class="active">Notes</b-nav-item>
+      <div>
+        <input type="checkbox" id='theme-switch' class='theme-switch sr-only' v-model="darkMode"/>
+        <label for='theme-switch'>
+          <span v-if="darkMode === true" class="img-switch">
+            <img alt="logo" src="@/assets/images/dark.png" width="20">
+          </span>
+          <span v-else class="img-switch">
+            <img alt="logo" src="@/assets/images/light.png" width="20">
+          </span>
+        </label>
+      </div>
+    </b-nav>
   </header>
 </template>
 
 <script>
 // @ is an alias to /src
-import Container from '@/components/Container.vue'
 export default {
   name: 'Header',
   components: {
-    Container
   },
   data() {
       return {
